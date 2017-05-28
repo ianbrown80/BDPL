@@ -1,6 +1,6 @@
 <header class="banner">
   <div class="container">
-    <a class="banner__image-link" href="http://placehold.it"><img class="banner__image" src="http://placehold.it/100x150"></a>
+    <a class="banner__image-link" href="<?php home_url(); ?>"><img class="banner__image" src="http://placehold.it/100x150"></a>
     <h1 class="banner__heading"><?php bloginfo('name'); ?></h1>
     <div class="banner__social-icons">
       <a class="banner__social-link" href="http://placehold.it"><img class="banner__social-icon" src="http://placehold.it/80x80"></a>

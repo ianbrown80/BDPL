@@ -1,0 +1,14 @@
+.footer {
+    min-height: 10px;
+    background-color: $brand-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &__copyright {
+        color: $text-secondary;
+        width: 100%;
+        text-align: center;
+    }
+}
