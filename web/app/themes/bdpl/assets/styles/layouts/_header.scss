@@ -1,13 +1,13 @@
-.banner {
+.header {
     background-color: $brand-primary;
     height: 150px;
     
     
-    &__heading {
+    &__primary {
         font-weight: 900;
         font-style: italic;        
         font-size: 2rem;     
-        padding: 55px 10px 50px 30px;
+        padding: 35px 10px 24px 10px;
         color: $text-secondary;
         float: left;
     }
@@ -16,7 +16,7 @@
         width: 100px;
         height: 150px;
         float: left;
-        z-index: 999;
+        margin-right:25px;
     }
 
     &__image {
@@ -29,20 +29,58 @@
     }    
 
     &__social-icon {
-        border-radius: 50px;
-        width: 50px;
-        height: 50px;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
     }
 
     &__social-link {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
         display: inline-block;
-        margin: 50px 0;
+        margin: 35px 0 0 0;
+    }
+
+    &__nav {
+        float: left;
+    }
+
+    &__nav ul {
+        padding: 0;
+    }
+
+    &__nav .menu-item {
+        background-color: $brand-primary;
+        list-style: none;
+        padding: 10px 20px;
+        margin: 0 1px;
+        text-align: center;
+        border: 2px outset $text-primary; 
+        border-radius: 15px;  
+    }
+
+    &__nav .menu-item > a {
+        color: $text-secondary;
+    }
+
+    &__nav .menu-item:hover {
+        background-color: $brand-secondary;
+        text-decoration: none;
+        border-radius: 15px;  
+    }
+
+    &__nav .menu-item:hover > a {
+        color: $text-secondary;
+        text-decoration: none;
+    }
+
+    &__nav .current-menu-item {        
+        border: 2px inset $text-secondary; 
+    }
+
+    &__nav .current-menu-item > a {
+        color: $text-secondary;
     }
 }
 
-.nav-primary {
-    clear: both;
-}
