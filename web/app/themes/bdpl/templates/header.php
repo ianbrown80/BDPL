@@ -7,14 +7,16 @@
           <h3 class="header__sub-heading"><?php bloginfo('description'); ?></h3>
         </a>
       </div>
-    </div>
-    <nav class="header__nav">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
+      <div class="col-md-9">
+        <nav class="header__nav">
+          <?php
+          if (has_nav_menu('primary_navigation')) :
+            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+          endif;
+          ?>
+        </nav>
+      </div>
+    </div>    
   </div>
 </header>
 <div class="clear-fix"></div>

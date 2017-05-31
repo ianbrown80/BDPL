@@ -24,7 +24,7 @@
     }
 
     &__nav {
-        float: left;
+        float: right;
     }
 
     &__nav ul {
@@ -34,34 +34,38 @@
     &__nav .menu-item {
         background-color: $brand-primary;
         list-style: none;
-        padding: 10px 20px;
-        margin: 0 1px;
-        text-align: center;
-        border: 2px outset $text-primary; 
-        border-radius: 15px;  
+        height: 120px;
+        width: 100px;
+        border-bottom: 1px solid $brand-secondary;
+        position: relative;
     }
 
     &__nav .menu-item > a {
         color: $text-secondary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__nav .menu-item:hover {
-        background-color: $brand-secondary;
-        text-decoration: none;
-        border-radius: 15px;  
+        background-color: white;        
+        text-shadow: none;
     }
 
     &__nav .menu-item:hover > a {
-        color: $text-secondary;
+        color: $brand-primary;
         text-decoration: none;
     }
 
-    &__nav .current-menu-item {        
-        border: 2px inset $text-secondary; 
+    &__nav .current-menu-item {  
+        background-color: white;        
+        text-shadow: none;
     }
 
     &__nav .current-menu-item > a {
-        color: $text-secondary;
+        color: $brand-primary;
+        text-decoration: none;
     }
 
 }
