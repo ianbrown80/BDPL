@@ -4,6 +4,11 @@ body {
     color: $text-primary;
 }
 
+img {
+    max-width: 100%;
+    
+}
+
 .clear-fix {
     clear: both;
 }

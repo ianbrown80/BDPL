@@ -35,6 +35,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
+  add_image_size('half-page', 570, 1200, true);
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats
@@ -86,6 +87,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
+    is_page('contacts'),	
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
