@@ -1,10 +1,10 @@
-<header class="banner">
+<header class="header">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
         <a href="<?php bloginfo('url'); ?>">
-          <h1 class="banner__heading"><?php bloginfo('name'); ?></h1>
-          <h3 class="banner__sub-heading"><?php bloginfo('description'); ?></h3>
+          <h1 class="header__heading"><?php bloginfo('name'); ?></h1>
+          <h3 class="header__sub-heading"><?php bloginfo('description'); ?></h3>
         </a>
       </div>
     </div>
