@@ -2,8 +2,7 @@
     background-color: $brand-primary;
     height: 120px;
     text-shadow: 2px 2px black;
-    border-bottom: 1px solid $brand-secondary;
-    
+    border-bottom: 1px solid $brand-secondary;    
     
     &__heading {
         font-weight: 900;
@@ -23,7 +22,6 @@
         text-align: center;        
         float: left;
     }
-
 
     &__nav {
         float: left;
@@ -65,8 +63,6 @@
     &__nav .current-menu-item > a {
         color: $text-secondary;
     }
-=======
- 
->>>>>>> header
+
 }
 
