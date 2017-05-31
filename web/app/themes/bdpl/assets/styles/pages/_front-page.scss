@@ -1,0 +1,61 @@
+
+.post-container {
+    width: 400%;
+    display: flex;
+    align-items: stretch;
+    margin: 5px;
+}
+
+.post {
+    text-align: justify;
+    position: relative;
+    float: left;
+    width: 25%;
+    margin: 5px 10px;
+    border: 1px solid black;
+    padding: 10px;    
+    background-color: $brand-primary;
+    opacity: 0.9;
+    color: $text-secondary;
+}
+
+.post-scroller {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.post-header {
+    font-size: 2rem;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+}
+
+.post-info {
+    border-bottom: 1px dotted black;
+    padding: 10px;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.scroller-controls-container {
+    margin: 0 auto;
+    width: 150px;
+}
+
+.scroller-control {
+    width: 16px;
+    height: 16px;
+    background-color: $brand-tertiary;
+    border: 4px solid $brand-tertiary;
+    margin: 30px 5px 0 5px;
+    float: left;
+    border-radius: 8px;
+    list-style: none;
+}
+
+#front-page-control-1 {
+    background-color: white;
+    border: 6px solid black;
+}
