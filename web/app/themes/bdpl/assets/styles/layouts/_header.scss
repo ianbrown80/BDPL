@@ -1,46 +1,29 @@
 .header {
     background-color: $brand-primary;
-    height: 150px;
+    height: 120px;
+    text-shadow: 2px 2px black;
+    border-bottom: 1px solid $brand-secondary;
     
     
     &__primary {
         font-weight: 900;
-        font-style: italic;        
-        font-size: 2rem;     
-        padding: 35px 10px 24px 10px;
+        width: 100%;      
+        font-size: 3rem;     
         color: $text-secondary;
+        padding-top: 10px;
+        text-align: center;
         float: left;
     }
 
-    &__image-link {
-        width: 100px;
-        height: 150px;
+    &__sub-heading {
+        font-weight: 300;
+        font-style: italic;        
+        font-size: 1rem;     
+        color: $text-secondary;
+        text-align: center;        
         float: left;
-        margin-right:25px;
     }
 
-    &__image {
-        width: 100px;
-        height: 150px;
-    }
-
-    &__social-icons {
-        float: right;
-    }    
-
-    &__social-icon {
-        border-radius: 20px;
-        width: 40px;
-        height: 40px;
-    }
-
-    &__social-link {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        display: inline-block;
-        margin: 35px 0 0 0;
-    }
 
     &__nav {
         float: left;
@@ -82,5 +65,8 @@
     &__nav .current-menu-item > a {
         color: $text-secondary;
     }
+=======
+ 
+>>>>>>> header
 }
 
