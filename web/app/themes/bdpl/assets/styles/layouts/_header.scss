@@ -1,49 +1,29 @@
 .header {
-    background-color: $brand-primary;
-    height: 150px;
+    height: 120px;
+    text-shadow: 1px 1px black;
+    border-bottom: 1px solid $brand-secondary;    
     
-    
-    &__primary {
+    &__heading {
         font-weight: 900;
-        font-style: italic;        
-        font-size: 2rem;     
-        padding: 35px 10px 24px 10px;
+        width: 100%;      
+        font-size: 3rem;     
         color: $text-secondary;
+        padding-top: 10px;
+        text-align: center;
         float: left;
     }
 
-    &__image-link {
-        width: 100px;
-        height: 150px;
+    &__sub-heading {
+        font-weight: 300;
+        font-style: italic;        
+        font-size: 1rem;     
+        color: $text-secondary;
+        text-align: center;        
         float: left;
-        margin-right:25px;
-    }
-
-    &__image {
-        width: 100px;
-        height: 150px;
-    }
-
-    &__social-icons {
-        float: right;
-    }    
-
-    &__social-icon {
-        border-radius: 20px;
-        width: 40px;
-        height: 40px;
-    }
-
-    &__social-link {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        display: inline-block;
-        margin: 35px 0 0 0;
     }
 
     &__nav {
-        float: left;
+        float: right;
     }
 
     &__nav ul {
@@ -51,36 +31,40 @@
     }
 
     &__nav .menu-item {
-        background-color: $brand-primary;
         list-style: none;
-        padding: 10px 20px;
-        margin: 0 1px;
-        text-align: center;
-        border: 2px outset $text-primary; 
-        border-radius: 15px;  
+        height: 120px;
+        width: 100px;
+        border-bottom: 1px solid $brand-secondary;
+        position: relative;
     }
 
     &__nav .menu-item > a {
         color: $text-secondary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__nav .menu-item:hover {
-        background-color: $brand-secondary;
-        text-decoration: none;
-        border-radius: 15px;  
+        background-color: white;        
+        text-shadow: none;
     }
 
     &__nav .menu-item:hover > a {
-        color: $text-secondary;
+        color: $brand-primary;
         text-decoration: none;
     }
 
-    &__nav .current-menu-item {        
-        border: 2px inset $text-secondary; 
+    &__nav .current-menu-item {  
+        background-color: white;        
+        text-shadow: none;
     }
 
     &__nav .current-menu-item > a {
-        color: $text-secondary;
+        color: $brand-primary;
+        text-decoration: none;
     }
+
 }
 
