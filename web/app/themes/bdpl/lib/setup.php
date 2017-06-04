@@ -35,7 +35,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
-  add_image_size('half-page', 570, 1200, true);
+  add_image_size('banner', 1200, 300, true);
 
   // Enable post formats
   // http://codex.wordpress.org/Post_Formats

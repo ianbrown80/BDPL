@@ -1,7 +1,8 @@
 .header {
     height: 120px;
     text-shadow: 1px 1px black;
-    border-bottom: 1px solid $brand-secondary;    
+    border-bottom: 1px solid $brand-secondary; 
+    background-color: $brand-primary;   
     
     &__heading {
         font-weight: 900;
