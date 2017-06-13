@@ -1,7 +1,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <h1 class="page-heading">Latest News</h1>
+        <h1 class="front-page-heading">Latest News</h1>
         <ul class="scroller-controls-container">
             <li id="front-page-control-1" class="scroller-control"></li>
             <li id="front-page-control-2" class="scroller-control"></li>

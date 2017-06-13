@@ -62,5 +62,15 @@
 
 .background-image {
     background-image: url("../../assets/images/background.jpg");
-    background-size: cover;
+    background-size: auto 100vh;
+    height: 100vh;
+    background-color: $brand-primary;
 }
+
+.front-page-heading {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    color: $text-secondary;
+}
+

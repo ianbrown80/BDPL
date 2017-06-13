@@ -1,0 +1,28 @@
+.teams-container {
+    background-color: $brand-primary;
+    margin-bottom: 25px;
+    width: 100%;
+    color: $text-secondary;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.teams-image {
+    padding: 25px;
+    width: 100%;
+}
+
+.teams-address-container {
+    line-height: 0.5rem;
+    padding: 25px;
+    text-align: center;
+}
+
+.teams-address-container h3 {
+    padding-bottom: 25px;
+}
+
+.details-button {
+    margin-top: 10px;
+}
