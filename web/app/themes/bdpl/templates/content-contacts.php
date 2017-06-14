@@ -1,24 +1,19 @@
-<div class="row">
-    <div class="col-md-10 offset-md-1">   
+<?php $args = array( 'post_type' => 'contacts' ); ?>
+<?php $loop = new WP_Query( $args ); ?>
+<?php if( $loop->have_posts() ) : ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-    <?php global $wpdb; ?>
-    <?php $results = $wpdb->get_results( 'SELECT * FROM wp_contacts' ); ?>
-
-    <?php if ( $results ) {
-        foreach ( $results as $contact ) { ?>
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="contact-block">
-                        <p class='contact-data'> <?php echo $contact->position; ?> </p>
-                        <p class='contact-data'> <?php echo $contact->name; ?> </p>
-                        <p class='contact-data'> <?php echo $contact->number; ?> </p>
-                    </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="contact-block">
+                    <p class='contact-data'> <?php echo get_post_meta( get_the_ID(), 'contact-role', true ); ?> </p>
+                    <p class='contact-data'> <?php echo get_post_meta( get_the_ID(), 'contact-name', true ); ?> </p>
+                    <p class='contact-data'> <?php echo get_post_meta( get_the_ID(), 'contact-number', true ); ?> </p>
                 </div>
             </div>
-    <?php }
-    } else {
-        echo "<h4 class='error-message alert alert-danger'>Oops something has gone wrong and I can't find the contacts. Sorry!</h4>";
-    } ?>
-    </div>
-</div>
+        </div>
+    <?php endwhile; wp_reset_query(); ?> 
+<?php else : ?>
+    <p><?php _e( 'Sorry, there are no contacts.' ); ?></p>
+<?php endif; ?>
 
