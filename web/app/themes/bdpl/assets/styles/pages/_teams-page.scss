@@ -13,10 +13,14 @@
     width: 100%;
 }
 
-.teams-address-container {
+.team-details-container {
     line-height: 0.5rem;
     padding: 25px;
     text-align: center;
+}
+
+.teams-container a, a:visited {
+    color: $text-secondary;
 }
 
 .teams-address-container h3 {

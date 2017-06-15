@@ -7,7 +7,7 @@
             <div class="teams-container">
                 <img class="teams-image col-md-6" src="<?= get_template_directory_uri(); ?>/dist/images/teams/<?php echo get_post_meta( get_the_ID(), 'team-image', true ); ?>">
         
-                <div class="teams-address-container col-md-6">
+                <div class="team-details-container col-md-6">
                     <h3><?php echo the_title();?></h3>
                     <p><?php echo get_post_meta( get_the_ID(), 'team-address-firstline', true );?></p>
                     <?php if (get_post_meta( get_the_ID(), 'team-address-secondline', true )) {?>
